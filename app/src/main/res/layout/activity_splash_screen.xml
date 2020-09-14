@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_900"
+    tools:context=".LoginPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutSplash"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitEnd"
+                android:src="@drawable/wave_background3"
+                android:tint="@color/md_white_1000" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitEnd"
+                android:src="@drawable/wave_background5"
+                android:tint="@color/md_white_1000" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitEnd"
+                android:src="@drawable/wave_background7"
+                android:tint="@color/md_white_1000" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:layout_gravity="bottom|center"
+                android:scaleType="fitStart"
+                android:src="@drawable/wave_background4"
+                android:tint="@color/md_white_1000" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:layout_gravity="bottom|center"
+                android:scaleType="fitStart"
+                android:src="@drawable/wave_background6"
+                android:tint="@color/md_white_1000" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:layout_gravity="bottom|center"
+                android:scaleType="fitStart"
+                android:src="@drawable/wave_background8"
+                android:tint="@color/md_white_1000" />
+
+            <TextView
+                android:id="@+id/splashTextBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/shakies_open_type"
+                android:text="@string/app_name"
+                android:textColor="@color/md_grey_200"
+                android:textSize="60sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/splashTextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/alley_garden"
+                android:text="Core Upper Middle Lower"
+                android:textColor="@color/md_grey_200"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

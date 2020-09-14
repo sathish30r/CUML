@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Walk">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:fontFamily="@font/tallfont2"
+                    android:text="RUN WITH ME"
+                    android:padding="20dp"
+                    android:textColor="@color/md_grey_900"
+                    android:textSize="135sp" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/run"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_grey_800"
+            android:layout_gravity="bottom"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+                app:layout_constraintEnd_toStartOf="@+id/frameLayout3"
+                app:layout_constraintTop_toTopOf="@+id/frameLayout3">
+
+                <TextView
+                    android:id="@+id/steps_calculation"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/tallfont2"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/md_grey_200"
+                    android:textSize="50sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <Button
+                    android:id="@+id/btn_start_location_updates"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/play_icon"
+                    android:backgroundTint="@color/md_grey_200" />
+
+                <Button
+                    android:id="@+id/btn_stop_location_updates"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/pause_icon"
+                    android:backgroundTint="@color/md_grey_200"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+                app:layout_constraintStart_toEndOf="@+id/frameLayout3"
+                app:layout_constraintTop_toTopOf="@+id/frameLayout3">
+
+                <TextView
+                    android:id="@+id/distance_calculation"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/tallfont2"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/md_grey_200"
+                    android:textSize="50sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:textColor="@color/md_grey_400"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textColor="@color/md_grey_400"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/location_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/updated_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

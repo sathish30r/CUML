@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="100"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="6"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle1" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="9"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle2" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="12"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle3" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="15"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle4" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle6"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="18"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle5" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle7"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="21"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle6" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle8"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="24"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle7" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle9"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="27"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle8" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle10"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="30"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle9" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle11"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="33"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle10" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle12"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="36"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle11" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle13"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="39"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle12" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle14"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="42"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle13" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle15"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="45"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle14" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle16"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="48"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle15" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle17"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="51"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle16" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle18"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="54"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle17" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle19"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="57"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle18" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle20"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="60"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle19" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle21"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="63"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle20" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle22"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="66"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle21" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle23"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="69"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle22" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle24"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="72"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle23" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle25"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="75"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle24" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle26"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="78"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle25" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle27"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="81"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle26" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle28"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="87"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle27" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle29"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="94"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle28" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+        <com.github.rongi.rotate_layout.layout.RotateLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:angle="90">
+
+            <ProgressBar
+                android:id="@+id/determinateBarMiddle30"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="100"
+                android:progressBackgroundTint="@color/md_grey_200"
+                android:scaleY="1.5"
+                android:progressTint="@color/md_grey_800"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/determinateBarMiddle29" />
+        </com.github.rongi.rotate_layout.layout.RotateLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

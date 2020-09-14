@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/md_grey_200"
+    tools:context=".VerifyPhoneActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/buttonDummy3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_oval_background"
+        android:backgroundTint="@color/md_grey_500"
+        android:text="1"
+        android:textColor="@color/md_white_1000"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDummy4"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDummy4" />
+
+    <Button
+        android:id="@+id/buttonDummy4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_oval_background"
+        android:backgroundTint="@color/md_grey_800"
+        android:text="2"
+        android:textColor="@color/md_white_1000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:digits="0123456789"
+        android:hint="enter code"
+        android:maxLength="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCode"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/md_grey_800"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCode" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSignIn"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutVerify"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitEnd"
+            android:src="@drawable/wave_background3"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitEnd"
+            android:src="@drawable/wave_background5"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitEnd"
+            android:src="@drawable/wave_background7"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="125dp"
+            android:scaleType="fitStart"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/wave_background4"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="125dp"
+            android:scaleType="fitStart"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/wave_background6"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="125dp"
+            android:scaleType="fitStart"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/wave_background8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/shakies_open_type"
+            android:textColor="@color/md_grey_800"></TextView>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/geomentry_face"
+            android:tint="@color/md_grey_800"></ImageView>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="OTP will fetch automatically when it is received"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutVerify" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutBottomVerfiyPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/wave_background3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/wave_background5" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/wave_background7" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
